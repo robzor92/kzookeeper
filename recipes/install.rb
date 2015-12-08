@@ -22,6 +22,7 @@ end
 require 'json'
 
 include_recipe 'build-essential::default'
+node.default['java']['jdk_version'] = 8
 include_recipe 'java'
 
 zookeeper node[:zookeeper][:version] do

@@ -4,6 +4,8 @@ maintainer_email "jdowling@kth.se"
 license          "Apache v2.0"
 description      'Installs/Configures/Runs kzookeeper'
 version          "0.1"
+source_url       "https://github.com/hopshadoop/kzookeeper"
+
 
 recipe            "kzookeeper::install", "Experiment setup for kzookeeper"
 recipe            "kzookeeper::default",  "configFile=; default recipe to install zookeeper"
